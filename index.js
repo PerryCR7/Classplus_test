@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
 const app = express()
-const Port =  process.env.Port || 3000
+const port = Process.env.PORT || 3000 ;
 const hbs = require('hbs')
 
 
@@ -57,6 +57,6 @@ app.get('/get_random_pic', async(req, res) => {
 app.get('*', (req, res) => {
    res.render('index')
 })
- app.listen(Port, () => {
-     console.log('Server is up on port!')
+ app.listen(port, () => {
+     console.log('Server is up on port!' + port)
  })
