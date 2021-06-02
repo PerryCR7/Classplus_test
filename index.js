@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
 const app = express()
-const Port =  process.env.Port || 3000
+const Port =  3000
 const hbs = require('hbs')
 const request = require('request')
 console.log(__dirname)
