@@ -1,5 +1,5 @@
 
-fetch('http://localhost:3000/get_random_pic?search=random').then((response) => {
+fetch('/get_random_pic?search=random').then((response) => {
     response.json().then((data) => {
         // console.log(data.datalist);
         for (i = 0; i < data.datalist.length; i++) {
@@ -15,7 +15,7 @@ function myFunction(val) {
     // alert(val)
     document.getElementById('loader-desk').style.display = "inline-block";
     document.getElementById('image_container').style.display = "none";
-    fetch('http://localhost:3000/get_random_pic?search=' + val).then((response) => {
+    fetch('/get_random_pic?search=' + val).then((response) => {
         response.json().then((data) => {
             if (data.datalist.length == 0) {
                 document.getElementById('image_container').innerHTML = '<div style="width:100%;text-align:center;font-size:30px;color:#000;font-weight:500">No Result Found!</div>'
