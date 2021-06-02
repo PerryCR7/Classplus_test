@@ -1,1 +1,1 @@
-web: node ondex.js
+web: node index.js
