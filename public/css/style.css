@@ -1,0 +1,35 @@
+
+.desk-title {
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.search-title {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.search-button:focus-visible {
+    border: 2px solid #2488d0 !important;
+    outline: none;
+  }
+
+.desk-image {
+    width:100%;
+    margin-top: 20px;
+  }
+
+#image_container {
+    display: none;
+  }
+
+#loader-desk {
+    height: 100px;
+    width:100px;
+  }

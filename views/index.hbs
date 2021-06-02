@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/popup.css">
+
+  <!-- Enter a proper page title here -->
+  <title>ReactJS Assignment</title>
+
+  <!-- Enter a proper description for the page in the meta description tag -->
+  <meta name="description" content="Create a minimal application as per the description and using the above interface as
+reference">
+  <!-- Enter page description -->
+  <meta property="og:description" content="Create a minimal application as per the description and using the above interface as
+reference">
+
+</head>
+
+<body>
+  {{!-- <div class="d-none d-lg-block"> --}}
+    <div class="container">
+      <h1 class="desk-title mt-5 mb-3">ReactJS Assignment</h1>
+      <div class="p-4" style="width:100%;text-align: center;background-color:#000;">
+        <h1 class="search-title mb-2">Search Photos</h1>
+        <input type="text" style="width: 300px;" class="search-button" name="search" onchange="myFunction(this.value)">
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="text-center pt-5">
+        <div class="spinner-border mt-5" id="loader-desk" role="status">
+        </div>
+      </div>
+      <div id="image_container" class="row">
+      </div>
+    </div>
+
+  {{!-- </div> --}}
+  {{!-- <div class="d-lg-none">
+
+  </div> --}}
+
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/src.js"></script>
+  <script src="/js/popper.min.js"></script>
+</body>
+
+</html>
